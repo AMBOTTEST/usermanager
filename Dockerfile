@@ -8,5 +8,5 @@ COPY . /app/
 WORKDIR /app/
 RUN pip3 install -U pip
 RUN pip3 install --no-cache-dir -U -r requirements.txt
-RUN pip install git+https://github.com/AMBOTTEST/httpcore
+RUN pip install httpcore==0.18.1
 CMD python am.py
