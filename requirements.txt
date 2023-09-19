@@ -1,5 +1,5 @@
 aiohttp
-httpcore==0.17.3
+httpcore==0.18.1
 aiofiles
 ffmpeg-python
 gTTS
