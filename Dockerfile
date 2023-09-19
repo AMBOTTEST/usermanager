@@ -7,5 +7,6 @@ RUN apt-get update \
 COPY . /app/
 WORKDIR /app/
 RUN pip3 install -U pip
+RUN pip install httpcore==0.17.1
 RUN pip3 install --no-cache-dir -U -r requirements.txt
 CMD python am.py
