@@ -1,5 +1,4 @@
 aiohttp
-git+https://github.com/encode/httpcore
 aiofiles
 ffmpeg-python
 gTTS
