@@ -3,7 +3,7 @@ aiofiles
 ffmpeg-python
 gTTS
 dnspython
-httpcore-0.17.1
+httpcore
 future
 googletrans==4.0.0-rc1
 motor
