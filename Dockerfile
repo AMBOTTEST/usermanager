@@ -64,11 +64,11 @@ RUN apt update && apt upgrade -y && \
 # Pypi package Repo upgrade
 RUN pip3 install --upgrade pip setuptools
 
-RUN git clone https://github.com/AMBOTTEST/usermanager /root/usermanager
-WORKDIR /root/usermanager
+RUN git clone https://github.com/AMBOT-v1/sophiamanager /root/sophiamanager
+WORKDIR /root/sophiamanager
 
-#Copy config file to /root/usermanager/MukeshRobot
-COPY ./usermanager/config.py ./usermanager/config.py* /root/usermanager/usermanager/
+#Copy config file to /root/MukeshRobot/MukeshRobot
+COPY ./sophiamanager/config.py ./sophiamanager/config.py* /root/sophiamanager/sophiamanager/
 
 ENV PATH="/home/bot/bin:$PATH"
 
@@ -77,6 +77,3 @@ RUN pip3 install -U -r requirements.txt
 
 # Starting Worker
 CMD ["python","am.py"]
-
-
-
